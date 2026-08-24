@@ -15,9 +15,30 @@ Welcome to the **Green DevOps Plugin**! This tool is designed to drastically red
 
 ---
 
+### Configuring the API Key in Jenkins
+
+Before adding the agent to your pipeline, you need to store your Electricity Maps API key securely in Jenkins:
+1. Go to **Manage Jenkins** > **Credentials**.
+2. Select your domain (e.g., `(global)`).
+3. Click **Add Credentials**.
+4. Set the **Kind** to `Secret text`.
+5. Enter your API key in the **Secret** field.
+6. Set the **ID** to `electricity-maps-key`.
+7. Click **Create**.
+
+---
+
 ## 1. Quick Integration
 
 You can integrate the Green AI Agent directly into any existing Jenkins pipeline without needing to install heavy plugins. The agent runs completely contained inside a Docker image (`beliver247/build-optimizer-agent`).
+
+### Pulling the Agent Image
+
+Before running the agent, make sure to pull the latest image to your Jenkins runner:
+
+```bash
+docker pull beliver247/build-optimizer-agent:latest
+```
 
 ### Add the Agent to your Jenkinsfile
 
