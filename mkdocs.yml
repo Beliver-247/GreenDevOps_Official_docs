@@ -28,4 +28,6 @@ theme:
 
 nav:
   - Home: index.md
-  - Quick Start Guide: quick_start_guide.md
+  - Quick Start Guides:
+      - Docker Deployment: quick_start_docker.md
+      - Local Deployment: quick_start_local.md

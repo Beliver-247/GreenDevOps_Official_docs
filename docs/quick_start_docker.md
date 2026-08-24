@@ -1,4 +1,4 @@
-# Green DevOps Plugin: Quick Start Guide
+# Green DevOps Plugin: Docker Quick Start Guide
 
 Welcome to the **Green DevOps Plugin**! This tool is designed to drastically reduce the carbon footprint of your CI/CD pipelines by introducing two powerful capabilities:
 1. **Intelligent Build Optimization:** Analyzes your Git diffs and Maven dependencies to build and test *only* what is necessary.

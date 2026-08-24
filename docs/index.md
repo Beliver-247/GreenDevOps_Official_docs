@@ -10,4 +10,6 @@ GreenDevOps is a next-generation CI/CD framework designed to reduce the carbon f
 
 ## Getting Started
 
-To get up and running quickly, check out the [Quick Start Guide](quick_start_guide.md).
+To get up and running quickly, check out the Quick Start Guides:
+- [Docker Quick Start Guide](quick_start_docker.md)
+- [Local Quick Start Guide](quick_start_local.md)
