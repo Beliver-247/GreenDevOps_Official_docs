@@ -63,5 +63,10 @@ nav:
   - Pipeline:
       - Full Jenkinsfile Walkthrough: pipeline/full_jenkinsfile.md
       - Output Schema: pipeline/output_schema.md
+  - Deploy Component:
+      - Overview: deploy/overview.md
+      - Green Score: deploy/green_score.md
+      - API Reference: deploy/api_reference.md
+      - Setup & Installation: deploy/setup.md
   - How It Works: how_it_works.md
   - Troubleshooting: troubleshooting.md
