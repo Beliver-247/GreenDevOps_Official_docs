@@ -23,11 +23,45 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
     - search.suggest
     - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
 
 nav:
   - Home: index.md
   - Quick Start Guides:
       - Docker Deployment: quick_start_docker.md
       - Local Deployment: quick_start_local.md
+  - Concepts:
+      - System Architecture: concepts/architecture.md
+      - Carbon-Aware Scheduling: concepts/carbon_aware_scheduling.md
+  - Configuration:
+      - Overview: configuration/overview.md
+      - Full Reference: configuration/reference.md
+      - Examples: configuration/examples.md
+  - CLI Reference: cli/reference.md
+  - Pipeline:
+      - Full Jenkinsfile Walkthrough: pipeline/full_jenkinsfile.md
+      - Output Schema: pipeline/output_schema.md
+  - How It Works: how_it_works.md
+  - Troubleshooting: troubleshooting.md
